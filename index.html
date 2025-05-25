@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parad1st</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+.video-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-wrapper video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+    video.bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+
+    .roles {
+      color: #ddd;
+      margin-bottom: 25px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #ccc;
+    }
+
+    footer a {
+      color: #ccc;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Background video -->
+  <<div class="video-wrapper">
+  <video autoplay muted loop playsinline>
+    <source src="background.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+  <div class="container">
+    <img class="avatar" src="avatar.jpg" alt="avatar">
+    <h1>Skireevz</h1>
+    <p class="roles">Gamer | Hika | Drain</p>
+
+    <div class="links">
+      <a href="https://github.com/skireevz" class="btn">GitHub</a>
+      <a href="https://www.youtube.com/@skireevz" class="btn">YouTube</a>
+      
+      <a href="https://steamcommunity.com/profiles/76561198983093178/" class="btn">Steam</a>
+      <a href="https://discord.gg/TvQVA8V6HN" class="btn">Discord Group</a>
+    </div>
+
+    <footer>
+      <p>Created by skireevz<br>
+        <a href="#">Fork this page on GitHub</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
